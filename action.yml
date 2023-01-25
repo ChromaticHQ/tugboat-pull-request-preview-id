@@ -1,21 +1,21 @@
-# action.yml
+---
 name: 'Tugboat Get Pull Request Preview ID'
 description: 'This action queries the Tugboat API and get the ID of a preview associated with a given PR.'
 branding:
   icon: refresh-cw
   color: gray-dark
 inputs:
-  tugboat-api-token:  # id of input
+  tugboat-api-token:
     description: 'Tugboat API token'
     required: true
   tugboat-repo-id:
     description: 'Tugboat repository ID'
     require: true
-  pull-request-number:  # id of input
+  pull-request-number:
     description: 'Pull request number'
     required: true
 outputs:
-  tugboat-preview-id: # id of output
+  tugboat-preview-id:
     description: 'The Tugboat preview ID'
 runs:
   using: 'docker'
