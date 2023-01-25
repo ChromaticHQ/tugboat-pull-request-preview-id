@@ -1,4 +1,4 @@
-# Tugboat Pull Request Action
+# Tugboat Get Pull Request Preview ID
 
 This action queries the Tugboat API and get the ID of a preview associated with a given PR.
 

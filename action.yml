@@ -1,5 +1,5 @@
 # action.yml
-name: 'Tugboat PR Actions'
+name: 'Tugboat Get Pull Request Preview ID'
 description: 'This action queries the Tugboat API and get the ID of a preview associated with a given PR.'
 branding:
   icon: refresh-cw
