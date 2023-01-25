@@ -1,0 +1,23 @@
+# action.yml
+name: 'Tugboat PR Actions'
+description: 'TK'
+inputs:
+  tugboat-api-token:  # id of input
+    description: 'Tugboat API token'
+    required: true
+  tugboat-repo-id:
+    description: 'Tugboat repository ID'
+    require: true
+  pull-request-number:  # id of input
+    description: 'Pull request number'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tugboat-api-token }}
+    - ${{ inputs.tugboat-repo-id }}
+    - ${{ inputs.pull-request-number }}
