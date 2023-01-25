@@ -1,6 +1,6 @@
 # Tugboat Pull Request Action
 
-This action enables you to query the Tugboat API and get the ID of a pull request's associated preview.
+This action queries the Tugboat API and get the ID of a preview associated with a given PR.
 
 Note: This action may behave unexpectedly if there are more than one previews associated with a single pull request.
 

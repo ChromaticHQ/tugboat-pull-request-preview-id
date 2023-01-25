@@ -1,6 +1,9 @@
 # action.yml
 name: 'Tugboat PR Actions'
-description: 'TK'
+description: 'This action queries the Tugboat API and get the ID of a preview associated with a given PR.'
+branding:
+  icon: refresh-cw
+  color: gray-dark
 inputs:
   tugboat-api-token:  # id of input
     description: 'Tugboat API token'
