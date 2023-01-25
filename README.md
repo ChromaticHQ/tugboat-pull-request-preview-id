@@ -35,7 +35,7 @@ jobs:
     steps:
       - name: Get the ID of the Tugboat preview associated with this pull request
         id: get-tugboat-preview-id
-        uses: chromatichq/tugboat-pull-request-action@v1
+        uses: chromatichq/tugboat-pull-request-preview-id@v1
         with:
           tugboat-api-token: ${{ secrets.TUGBOAT_API_TOKEN }}
           tugboat-repo-id: ${{ secrets.TUGBOAT_REPO }}
